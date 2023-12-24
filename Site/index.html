@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha do Kai</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rebeccapurple;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px,250px));
+            text-align: center;
+        }
+
+        #breakfast {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px,290px));
+        }
+
+        #lunch {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px,290px));
+        }
+
+        #dinner {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px,290px));
+        }
+
+        #snacks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px,290px));
+        }
+
+        #juice {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px,290px));
+        }
+
+        @media (max-width:768px) {
+        }
+        .recipe {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .recipe img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+
+        .recipe-content {
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .recipe h3 {
+            color: rebeccapurple;
+               margin-bottom: 10px;
+        }
+
+        #search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        }
+
+        #search-input {
+         padding: 10px;
+        width: 300px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        }
+
+        #search-button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: rebeccapurple;
+        color: #fff;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        }
+    </style>
+
+    <header>
+        <h1>RECEITAS DIABÉTICAMENTE DELICIOSAS</h1>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar receitas">
+            <button id="search-button">Pesquisar</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#breakfast">Café da Manhã</a>
+        <a href="#lunch">Almoço</a>
+        <a href="#dinner">Jantar</a>
+        <a href="#snacks">Lanches</a>
+        <a href="#juice">Sucos</a>
+    </nav>
+
+    <section id="breakfast">
+        <h2>Café da Manhã</h2>
+
+        <div class="recipe">
+            <div class="recipe-content">
+            <h3>Omelete de Vegetais</h3>
+            <img src="Omelete-com-claras.jpg" alt="Omelete de Vegetais">
+            <p><strong>Ingredientes</strong></p>
+            <ul>
+                <li>2 ovos</li>
+                <li>Tomate, espinafre e cogumelos picados</li>
+                <li>Sal e pimenta a gosto</li>
+            </ul>
+            <p><strong>Modo de Preparo:</strong></p>
+            <ol>
+                <li>Bata os ovos em uma tigela.</li>
+                <li>Aqueça uma frigideira antiaderente e adicione os vegetais.</li>
+                <li>Despeje os ovos batidos sobre os vegetais.</li>
+                <li>Cozinhe até que os ovos estejam firmes.</li>
+                <li>Tempere com sal e pimenta a gosto.</li>
+            </ol>
+        </div>
+        </div>
+
+        <div class="recipe">
+            <h3>Shake de morango</h3>
+            <div class="recipe-content">
+            <img src="milkshake-de-morango.jpg" alt="Shake de morango">
+            <p><strong>Ingredientes</strong></p>
+            <ul>
+                <li>1 copo de iorgute desnatado</li>
+                <li>6 morangos</li>
+                <li>Cubos de gelo a gosto</li>
+            </ul>
+            <p><strong>Modo de Preparo:</strong></p>
+            <ol>
+                <li>Bata no liquidificador e sirva gelado em seguida. Se preferir adicione um pouco de adoçante.</li>
+            </ol>
+        </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-content">
+            <h3>Sanduíche de Bauru</h3>
+            <img src="Bauru-Fit-em-2-Minutos.jpg" alt="Sanduiche de bauru">
+            <p><strong>Ingredientes</strong></p>
+            <ul>
+                <li>1 copo de leite desnatado com café e adoçante</li>
+                <li>2 fatias de pão de forma integral com queijo branco light, tomate e orégano</li>
+                <li>1 tangerina</li>
+            </ul>
+            <p><strong>Modo de Preparo:</strong></p>
+            <ol>
+                <li>Prepare o café com leite e adoce com adoçante.</li>
+                <li>Recheie o pão com queijo branco e fatias de tomate e orégano, tipo bauru</li>
+                <li>Consuma quente ou frio, como preferir. Coma a tangerina de sobremesa</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="lunch">
+        <h2>Almoço</h2>
+        <div class="recipe">
+            <div class="recipe-content">
+            <h3>Frango Grelhado com Legumes</h3>
+            <img src="POST_FRANGO_GRELHADO.png" alt="Frango Grelhado com Legumes">
+            <p><strong>Ingredientes</strong></p>
+            <ul>
+                <li>Peito de frango</li>
+                <li>Abobrinha, cenoura e pimentão</li>
+                <li>Azeite de oliva, sal e ervas a gosto</li>
+            </ul>
+            <p><strong>Modo de Preparo:</strong></p>
+            <ol>
+                <li>Tempere o peito de frango com sal, ervas e um pouco de azeite de oliva.</li>
+                <li>Corte os legumes em pedaços pequenos.</li>
+                <li>Grelhe o frango e os legumes até que estejam cozidos.</li>
+                <li>Sirva quente.</li>
+            </ol>
+        </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-content">
+            <h3>Carne Grelhada com Salada Verde</h3>
+            <img src="bife-grelhado-com-salada-verde-com-palmito-e-tomate-cereja_491130-4438.jpg" alt="Carne Grelhada com Salada Verde">
+            <p><strong>Ingredientes</strong></p>
+            <ul>
+                <li>Bife de carne magra</li>
+                <li>Salada verde (alface, rúcula, agrião)</li>
+                <li>Tomate cereja, pepino, e cenoura ralada</li>
+                <li>Molho de vinagrete (azeite de oliva, vinagre balsâmico, mostarda, sal e pimenta)</li>
+            </ul>
+            <p><strong>Modo de Preparo:</strong></p>
+            <ol>
+                <li>Tempere o bife com sal e pimenta.</li>
+                <li>Grelhe o bife até atingir o ponto desejado.</li>
+                <li>Misture os ingredientes da salada verde em uma tigela.</li>
+                <li>Corte o bife em tiras e coloque sobre a salada.</li>
+                <li>Regue com o molho de vinagrete e sirva.</li>
+            </ol>
+        </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-content">
+            <h3>Frango grelhado com Quinoa e Vegetais</h3>
+            <img src="FRANGO.jpg" alt="Frango grelhado com Quinoa e Vegetais">
+            <p><strong>Ingredientes</strong></p>
+            <ul>
+                <li>4 peitos de frango sem pele</li>
+                <li>1 xícara de quinoa</li>
+                <li>2 xícaras de água</li>
+                <li>1 abobrinha média, cortada em cubos</li>
+                <li>1 cenoura média, ralada</li>
+                <li>1 pimentão vermelho, cortado em tiras</li>
+                <li>2 colheres de sopa de azeite de oliva</li>
+                <li>Suco de 1 limão</li>
+                <li>2 dentes de alho picados</li>
+                <li>Sal e pimenta a gosto</li>
+                <li>Ervas frescas a gosto (salsa, coentro)</li>
+            </ul>
+            <p><strong>Modo de Preparo:</strong></p>
+            <ol>
+                <li>Tempere os peitos de frango com suco de limão, alho picado, sal e pimenta. Deixe marinar por pelo menos 30 minutos.</li>
+                <li>Em uma panela, enxágue a quinoa sob água corrente. Em seguida, cozinhe a quinoa em 2 xícaras de água de acordo com as instruções da embalagem.</li>
+                <li>Aqueça o azeite de oliva em uma frigideira ou grelha.</li>
+                <li>Grelhe os peitos de frango até que estejam cozidos por completo.</li>
+                <li>Enquanto o frango está grelhando, refogue os vegetais (abobrinha, cenoura, pimentão) em um pouco de azeite de oliva até que fiquem macios, mas ainda crocantes.</li>
+                <li>Misture os vegetais cozidos com a quinoa cozida.</li>
+                <li>Sirva os peitos de frango grelhado sobre a cama de quinoa e vegetais.</li>
+                <li>Decore com ervas frescas a gosto.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="dinner">
+        <h2>Jantar</h2>
+        <div class="recipe">
+            <div class="recipe-content">
+                <h3>Sopa de Legumes com Frango</h3>
+                <img src="sopa.jpg" alt="Sopa de Legumes com Frango">
+                <p><strong>Ingredientes</strong></p>
+                <ul>
+                    <li>1 peito de frango sem pele, cozido e desfiado</li>
+                    <li>1 cenoura, cortada em rodelas</li>
+                    <li>1 abobrinha, cortada em cubos</li>
+                    <li>1 cebola, picada</li>
+                    <li>2 dentes de alho, picados</li>
+                    <li>1 xícara de brócolis, cortados em floretes</li>
+                    <li>1 litro de caldo de galinha sem adição de gordura</li>
+                    <li>1 colher de chá de azeite de oliva</li>
+                    <li>Sal e pimenta a gosto</li>
+                    <li>Ervas frescas a gosto (salsa, cebolinha)</li>
+                </ul>
+                <p><strong>Modo de Preparo:</strong></p>
+                <ol>
+                    <li>Aqueça o azeite de oliva em uma panela grande.</li>
+                    <li>Refogue a cebola e o alho até ficarem dourados.</li>
+                    <li>Adicione a cenoura, abobrinha e brócolis. Refogue por alguns minutos.</li>
+                    <li>Despeje o caldo de galinha na panela e deixe ferver.</li>
+                    <li>Adicione o frango desfiado à panela.</li>
+                    <li>Cozinhe em fogo médio por cerca de 15-20 minutos, até que os vegetais estejam macios.</li>
+                    <li>Tempere com sal, pimenta e adicione ervas frescas a gosto.</li>
+                    <li>Sirva quente.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-content">
+                <h3>Escondidinho de Carne Moída</h3>
+                <img src="Escondidinho_de_carne_moída-796x477.jpg" alt="Escondidinho de Carne Moída">
+                <p><strong>Ingredientes:</strong></p>
+                <ul>
+                    <li>500g de carne moída magra</li>
+                    <li>2 colheres de sopa de azeite de oliva</li>
+                    <li>1 cebola picada</li>
+                    <li>2 dentes de alho picados</li>
+                    <li>Sal e pimenta a gosto</li>
+                    <li>1 xícara de purê de batata doce</li>
+                    <li>1 xícara de queijo branco light ralado</li>
+                    <li>Salsinha picada para decorar</li>
+                </ul>
+                <p><strong>Modo de Preparo:</strong></p>
+                <ol>
+                    <li>Aqueça o azeite em uma panela e refogue a cebola e o alho até ficarem dourados.</li>
+                    <li>Adicione a carne moída, tempere com sal e pimenta, e cozinhe até dourar.</li>
+                    <li>Em um refratário, coloque a carne moída no fundo.</li>
+                    <li>Cubra a carne com o purê de batata doce e, em seguida, com o queijo ralado.</li>
+                    <li>Leve ao forno preaquecido a 180°C por 20 minutos, ou até que o queijo esteja dourado.</li>
+                    <li>Decore com salsinha antes de servir.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-content">
+                <h3>Strogonoff de Frango</h3>
+                <img src="img_como_fazer_estrogonofe_light_18654_orig.jpg" alt="Strogonoff de Frango para Diabéticos">
+                <p><strong>Ingredientes:</strong></p>
+                <ul>
+                    <li>300g de peito de frango cortado em tiras</li>
+                    <li>1 colher de sopa de azeite de oliva</li>
+                    <li>1 cebola picada</li>
+                    <li>2 dentes de alho picados</li>
+                    <li>1 xícara de cogumelos frescos, fatiados</li>
+                    <li>1 colher de sopa de mostarda Dijon</li>
+                    <li>1 colher de sopa de molho de tomate sem adição de açúcar</li>
+                    <li>1/2 xícara de creme de leite light</li>
+                    <li>Sal e pimenta a gosto</li>
+                    <li>Salsinha picada para decorar</li>
+                </ul>
+                <p><strong>Modo de Preparo:</strong></p>
+                <ol>
+                    <li>Aqueça o azeite em uma frigideira e doure o frango.</li>
+                    <li>Adicione a cebola e o alho, refogando até ficarem macios.</li>
+                    <li>Acrescente os cogumelos e cozinhe até que liberem a água e a mesma evapore.</li>
+                    <li>Misture a mostarda e o molho de tomate na panela.</li>
+                    <li>Reduza o fogo, adicione o creme de leite e cozinhe até que o molho engrosse.</li>
+                    <li>Tempere com sal e pimenta a gosto.</li>
+                    <li>Decore com salsinha antes de servir.</li>
+                </ol>
+            </div>
+    </section>
+
+    <section id="snacks">
+        <h2>Lanches</h2>
+        <div class="recipe">
+            <div class="recipe-content">
+                <h3>Pizza de Frango com Massa Integral</h3>
+                <img src="Massa-de-Pizza-100-Integral-1.jpg" alt="Pizza de Frango com Massa Integral">
+                <p><strong>Ingredientes:</strong></p>
+                <ul>
+                    <li>Massa de pizza integral pré-cozida</li>
+                    <li>1 xícara de peito de frango cozido e desfiado</li>
+                    <li>1/2 xícara de molho de tomate sem adição de açúcar</li>
+                    <li>1 xícara de queijo mussarela light ralado</li>
+                    <li>Vegetais a gosto (pimentão, cebola, cogumelos)</li>
+                    <li>Orégano a gosto</li>
+                </ul>
+                <p><strong>Modo de Preparo:</strong></p>
+                <ol>
+                    <li>Pré-aqueça o forno de acordo com as instruções da massa de pizza.</li>
+                    <li>Em uma tigela, misture o frango desfiado com o molho de tomate.</li>
+                    <li>Espalhe a mistura sobre a massa de pizza.</li>
+                    <li>Adicione os vegetais e o queijo por cima.</li>
+                    <li>Polvilhe orégano a gosto.</li>
+                    <li>Asse no forno até que a massa esteja dourada e o queijo derretido.</li>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-content">
+                <h3>Wrap de Frango com Vegetais</h3>
+                <img src="shutterstock_711254935.jpg" alt="Wrap de Frango com Vegetais">
+                <p><strong>Ingredientes:</strong></p>
+                <ul>
+                    <li>1 tortilha integral</li>
+                    <li>100g de peito de frango cozido e desfiado</li>
+                    <li>Folhas de alface</li>
+                    <li>Tomate cereja cortado ao meio</li>
+                    <li>Pepino em rodelas</li>
+                    <li>Cenoura ralada</li>
+                    <li>Iogurte grego sem açúcar</li>
+                    <li>Sal e pimenta a gosto</li>
+                </ul>
+                <p><strong>Modo de Preparo:</strong></p>
+                <ol>
+                    <li>Aqueça a tortilha integral em uma frigideira por alguns segundos de cada lado, apenas para amaciar.</li>
+                    <li>Espalhe o iogurte grego sem açúcar sobre a tortilha, deixando uma borda livre.</li>
+                    <li>No centro da tortilha, coloque o peito de frango desfiado.</li>
+                    <li>Distribua as folhas de alface sobre o frango, seguidas pelos tomates cereja cortados ao meio, rodelas de pepino e a cenoura ralada.</li>
+                    <li>Tempere com sal e pimenta a gosto.</li>
+                    <li>Dobre as bordas laterais da tortilha sobre o recheio e, em seguida, dobre a parte inferior para fechar o wrap.</li>
+                    <li>Enrole o wrap de forma firme, começando pela parte inferior, até formar um pacote.</li>
+                    <li>Você pode servir inteiro ou cortar ao meio diagonalmente para facilitar o consumo.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-content">
+                <h3>Smoothie de Frutas</h3>
+                <img src="transferir.jpg" alt="Smoothie de Frutas">
+                <p><strong>Ingredientes:</strong></p>
+                <ul>
+                    <li>1 banana congelada</li>
+                    <li>1 xícara de morangos congelados</li>
+                    <li>1/2 xícara de abacaxi em pedaços</li>
+                    <li>1/2 xícara de iogurte natural</li>
+                    <li>1/2 xícara de suco de laranja</li>
+                    <li>Mel a gosto</li>
+                </ul>
+                <p><strong>Modo de Preparo:</strong></p>
+                <ol>
+                    <li>Coloque todos os ingredientes no liquidificador.</li>
+                    <li>Bata até obter uma consistência cremosa e suave.</li>
+                    <li>Adoce com mel, se desejar.</li>
+                    <li>Sirva imediatamente e aproveite!</li>
+                </ol>
+            </div>
+        </div>
+        </section>
+
+        <section id="juice">
+            <h2>Sucos</h2>
+            <div class="recipe">
+                <div class="recipe-content">
+                <h3>Suco de Melancia</h3>
+                <img src="melancia.jpg" alt="Suco de Melancia">
+                <p><strong>Ingredientes:</strong></p>
+                <ul>
+                    <li>2 xícaras de melancia picada</li>
+                    <li>1/2 limão espremido</li>
+                    <li>1 colher de chá de gengibre ralado</li>
+                    <li>1-2 colheres de chá de mel</li>
+                    <li>Gelo a gosto</li>
+                </ul>
+                <p><strong>Modo de Preparo:</strong></p>
+                <ol>
+                    <li>Coloque a melancia, o suco de limão e o gengibre no liquidificador.</li>
+                    <li>Bata até obter uma mistura homogênea.</li>
+                    <li>Adoce com mel a gosto e misture novamente.</li>
+                    <li>Sirva com gelo e aproveite este refrescante suco de melancia!</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="recipe">
+                <div class="recipe-content">
+                    <h3>Suco Verde Detox</h3>
+                    <img src="suco.jpg" alt="Suco verde detox">
+                    <p><strong>Ingredientes:</strong></p>
+                    <ul>
+                        <li>1 maçã verde, cortada</li>
+                        <li>1 pepino, descascado e cortado</li>
+                        <li>1 punhado de espinafre</li>
+                        <li>1 limão espremido</li>
+                        <li>1/2 abacaxi, cortado em pedaços</li>
+                        <li>Água de coco a gosto</li>
+                    </ul>
+                    <p><strong>Modo de Preparo:</strong></p>
+                    <ol>
+                        <li>Coloque todos os ingredientes no liquidificador.</li>
+                        <li>Adicione água de coco a gosto para alcançar a consistência desejada.</li>
+                        <li>Bata até obter uma mistura suave.</li>
+                        <li>Sirva imediatamente e desfrute deste suco verde detox cheio de nutrientes!</li>
+                    </ol>
+                </div>
+            </div>
+          
+            <div class="recipe">
+                <div class="recipe-content">
+                    <h3>Suco de Morango com Hortelã</h3>
+                    <img src="morango.jpg" alt="Suco de morango">
+                    <p><strong>Ingredientes:</strong></p>
+                    <ul>
+                        <li>1 xícara de morangos frescos, cortados</li>
+                        <li>1/2 limão espremido</li>
+                        <li>Folhas de hortelã a gosto</li>
+                        <li>Água gelada</li>
+                        <li>Gelo a gosto</li>
+                    </ul>
+                    <p><strong>Modo de Preparo:</strong></p>
+                    <ol>
+                        <li>Coloque os morangos, o suco de limão e as folhas de hortelã no liquidificador.</li>
+                        <li>Adicione água gelada a gosto para diluir o suco.</li>
+                        <li>Bata até obter uma mistura suave.</li>
+                        <li>Sirva com gelo e aproveite este suco refrescante de morango com hortelã!</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        
+    <script>
+        document.getElementById("search-button").addEventListener("click", function() {
+            var searchTerm = document.getElementById("search-input").value.toLowerCase();
+            var recipes = document.querySelectorAll(".recipe");
+    
+            recipes.forEach(function(recipe) {
+                var recipeTitle = recipe.querySelector("h3").innerText.toLowerCase();
+    
+                if (recipeTitle.includes(searchTerm)) {
+                    recipe.style.display = "block";
+                } else {
+                    recipe.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
